@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-const url ="mongodb+srv://sakshimishra2004545:LLXLlOqgLL6G0lXN@cluster0.9zmfo69.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
+const url =process.env.MONGODB_URI;
 
 let cached = global.mongoose;
 
